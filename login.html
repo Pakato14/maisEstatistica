@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+  <title>Mais Estátistica</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mais Estátistica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-responsivo" aria-controls="menu-responsivo" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu-responsivo">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">educLab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portal UFC</a>
+            </li>
+            <!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ação</a>
+                    <a class="dropdown-item" href="#">Outra ação</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Algo mais aqui</a>
+                    </div>
+                </li>-->
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+  </header>
+  <section id="background">
+    <div class="panel" id="form-box">
+      <form action="" method="post">
+        <h1 class="text-center">Login</h1>
+        <div class="form-group">
+          <label class="sr-only" for="login">Usuário</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-user"></span>
+            </div>
+            <input type="text" name="usuario" class="form-control" placeholder="Seu login de Usuário">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="senha">Senha</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-lock"></span>
+            </div>
+            <input type="password" name="senha" class="form-control" placeholder="Digite sua senha">
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Entrar" class="btn btn-success form-control">
+        </div>
+        <div class="form-group">
+          Não possui cadastro? <a href="cadastro.html"> Cadastra-se aqui!</a>.
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
