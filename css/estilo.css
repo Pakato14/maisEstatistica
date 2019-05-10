@@ -18,3 +18,16 @@
 #form-box input {
     font-size: large;
 }
+fieldset{
+    border-color: #cecece;
+    margin: 50px;
+    padding: 25px;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 20px;
+}
+legend{
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
