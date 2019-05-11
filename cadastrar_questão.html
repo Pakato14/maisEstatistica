@@ -55,61 +55,63 @@
           </div>
         </nav>        
       </header>
-      <section class="container cadastro">
+      <section class="container cadastro_questoes">
         <fieldset>
-        <legend>Identificação do Usuário</legend>        
+        <legend>Cadastrar Questão</legend>        
           <form>
             <div class="form-group">
-                <label for="nomeCompleto">Nome Completo</label>
-                <input type="name" class="form-control" id="nomeCompleto" placeholder="Informe seu nome completo">                  
-            </div>
-            <div class="form-group">
-              <label for="email">Endereço de email</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite um email válido">
+                <label for="pergunta">Pergunta</label>
+                <input type="text" class="form-control" id="pregunta" placeholder="Digite aqui o enunciado da questão">                                                 
             </div>
             <div class="row">
-              <div class="form-group col-md-6">
-                <label for="senhaUsuario">Senha</label>
-                <input type="password" class="form-control" id="senhaUsuario" placeholder="Senha">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="confirmaSenha">Confirmar Senha</label>
-                <input type="password" class="form-control" id="confirmaSenha" placeholder="Confirme sua senha">
-              </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="cDate">Data de Nascimento: </label>
-                    <input type="date" name="nascimento" class="form-control" id="cDate">
+                <div class="form-group col-md-4">
+                    <label for="nivel">Selecione o nível:</label>
+                    <select class="form-control" id="nivel">                        
+                        <option>Fácil</option>
+                        <option>Médio</option>
+                        <option>Difícil</option>                        
+                    </select>                      
                 </div>
-              <div class="form-group col-md-6">
-                <label>Sexo</label><br>
-                <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label>
-                <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
-              </div>              
-            </div>            
+                <div class="form-group col-md-4">
+                    <label for="nivel">Selecione a disciplina:</label>
+                    <select class="form-control" id="nivel">                        
+                        <option>Estatística I</option>
+                        <option>Estatística II</option>
+                        <option>Cálculo I</option>
+                        <option>Integral</option>                       
+                    </select>                      
+                </div>
+                <div class="form-group col-md-4">
+                        <label for="nivel">Selecione o curso:</label>
+                        <select class="form-control" id="nivel">                        
+                            <option>Estatística</option>
+                            <option>Economia</option>
+                            <option>Ciências Atuariais</option>
+                            <option>Ciência Contábeis</option>                       
+                        </select>                      
+                    </div>              
+            </div>
+            <label>Opçãoes da Questão</label><br> 
+            <!--<div class="radio">
+                <label><input type="radio" name="optradio" checked>Option 1</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 3</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 4</label>
+            </div> -->  
+            <label class="radio-inline alternativas"><input type="radio" name="optradio" checked>Option 1</label>
+            <label class="radio-inline alternativas"><input type="radio" name="optradio">Option 2</label>
+            <label class="radio-inline alternativas"><input type="radio" name="optradio">Option 3</label>
+            <label class="radio-inline alternativas"><input type="radio" name="optradio">Option 4</label> 
           </form>
         </fieldset>
-        <fieldset>
-            <legend>Identificação Acadêmica</legend>        
-              <form>
-                <div class="form-group">
-                    <label for="curso">Curso</label>
-                    <input type="name" class="form-control" id="curso" placeholder="Informe seu curso">                  
-                </div>                
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="universidade">Universidade</label>
-                    <input type="name" class="form-control" id="universidade" placeholder="Informe a sua Universidade">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="semestre">Semestre</label>
-                    <input type="name" class="form-control" id="semestre" placeholder="Informe o seu semestre">
-                  </div>                  
-                </div>                            
-              </form>
-            </fieldset>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        
+        <button type="submit" class="btn btn-primary">Cadastrar questão</button>
       </section>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
